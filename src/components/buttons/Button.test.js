@@ -2,7 +2,7 @@ import React from "react";
 import { act } from "react-dom/test-utils";
 import { render, unmountComponentAtNode } from "react-dom";
 
-import Button from "./Button";
+import { Button } from "./Button";
 
 let container = null;
 beforeEach(() => {
