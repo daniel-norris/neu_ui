@@ -12,6 +12,11 @@ jobs:
             - run: npm install
             - run: npm test
             - run: npx chromatic --project-token=gpeep2z0kqd
+            - run: |
+                if [ $CIRCLE_BRANCH = "master" ]
+                then
+                  npm release
+                fi
 workflows:
   build-and-test:
     jobs:
