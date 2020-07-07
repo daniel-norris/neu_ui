@@ -1,6 +1,6 @@
 {
   "name": "ui-neu",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "Neu UI, a responsive React component library.",
   "private": false,
   "main": "dist/index.js",
@@ -40,7 +40,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "build-storybook-docs": "build-storybook -s public --docs"
+    "build-storybook-docs": "build-storybook -s public --docs",
+    "release": "auto shipit"
   },
   "babel": {
     "presets": [
