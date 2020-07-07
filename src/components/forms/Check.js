@@ -2,7 +2,7 @@ import React from "react";
 import "./check.css";
 import "./radio.css";
 
-const Check = ({ disabled, type, id, label, name }) => (
+export const Check = ({ disabled, type, id, label, name }) => (
   <>
     <p className="mb-2">
       <input
@@ -16,5 +16,3 @@ const Check = ({ disabled, type, id, label, name }) => (
     </p>
   </>
 );
-
-export default Check;

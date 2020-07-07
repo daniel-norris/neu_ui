@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./card.css";
 
-const Card = ({ children }) => (
+export const Card = ({ children }) => (
   <article className="card flat bottom-right">{children}</article>
 );
 
@@ -12,5 +12,3 @@ Card.propTypes = {
    */
   children: PropTypes.string.isRequired,
 };
-
-export default Card;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./toggle.css";
 
-class Toggle extends Component {
+export class Toggle extends Component {
   constructor(props) {
     super(props);
     this.state = { clicked: false };
@@ -54,5 +54,3 @@ class Toggle extends Component {
     );
   }
 }
-
-export default Toggle;

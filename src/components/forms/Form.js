@@ -1,5 +1,3 @@
 import React from "react";
 
-const Form = ({ children }) => <form>{children}</form>;
-
-export default Form;
+export const Form = ({ children }) => <form>{children}</form>;

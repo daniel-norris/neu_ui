@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./card.css";
 
-const CardImg = ({ src, alt }) => (
+export const CardImg = ({ src, alt }) => (
   <img className="card__img" alt={alt ? alt : null} src={src}></img>
 );
 
@@ -16,5 +16,3 @@ CardImg.propTypes = {
    */
   alt: PropTypes.string.isRequired,
 };
-
-export default CardImg;

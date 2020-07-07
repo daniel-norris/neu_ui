@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 import "./progress.css";
 
-const Progress = ({ id, children, max, value }) => (
+export const Progress = ({ id, children, max, value }) => (
   <>
     <div>
       <Label htmlFor={id}>{children}</Label>
@@ -29,5 +29,3 @@ Progress.propTypes = {
    */
   htmlFor: PropTypes.string,
 };
-
-export default Progress;

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./card.css";
 
-const CardBody = ({ children }) => (
+export const CardBody = ({ children }) => (
   <section className="card__body">{children}</section>
 );
 
@@ -12,5 +12,3 @@ CardBody.propTypes = {
    */
   children: PropTypes.string.isRequired,
 };
-
-export default CardBody;

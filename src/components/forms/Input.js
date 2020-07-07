@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./form.css";
 
-const Input = ({ placeholder, type, id, name }) => (
+export const Input = ({ placeholder, type, id, name }) => (
   <input
     className="mb-2 form__input inset flat"
     placeholder={placeholder}
@@ -10,5 +10,3 @@ const Input = ({ placeholder, type, id, name }) => (
     name={name}
   ></input>
 );
-
-export default Input;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Switch = ({ disabled, type, id, label, name }) => (
+export const Switch = ({ disabled, type, id, label, name }) => (
   <p className="mt-2">
     <input
       type={type}
@@ -12,5 +12,3 @@ const Switch = ({ disabled, type, id, label, name }) => (
     <label htmlFor={id}>{label}</label>
   </p>
 );
-
-export default Switch;

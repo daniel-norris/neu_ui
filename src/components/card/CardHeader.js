@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./card.css";
 
-const CardHeader = ({ children }) => (
+export const CardHeader = ({ children }) => (
   <header className="card__header">{children}</header>
 );
 
@@ -12,5 +12,3 @@ CardHeader.propTypes = {
    */
   children: PropTypes.string.isRequired,
 };
-
-export default CardHeader;

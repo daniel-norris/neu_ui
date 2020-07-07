@@ -1,7 +1,7 @@
 import React from "react";
 import "./select.css";
 
-const Select = ({ options, children }) => (
+export const Select = ({ options, children }) => (
   <select className="mb-2">
     <option value="">{children}</option>
     {options.map((value, index) => (
@@ -11,5 +11,3 @@ const Select = ({ options, children }) => (
     ))}
   </select>
 );
-
-export default Select;

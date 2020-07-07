@@ -2,7 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./card.css";
 
-const CardTitle = ({ children }) => <h1 className="card__title">{children}</h1>;
+export const CardTitle = ({ children }) => (
+  <h1 className="card__title">{children}</h1>
+);
 
 CardTitle.propTypes = {
   /**
@@ -10,5 +12,3 @@ CardTitle.propTypes = {
    */
   children: PropTypes.string.isRequired,
 };
-
-export default CardTitle;

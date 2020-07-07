@@ -2,7 +2,7 @@ import React from "react";
 import "./button.css";
 import PropTypes from "prop-types";
 
-const Button = ({ children, size }) => (
+export const Button = ({ children, size }) => (
   <button
     className={
       size === "lg" ? "btn-lg flat bottom-right" : "btn-sml flat bottom-right"
@@ -27,5 +27,3 @@ Button.propTypes = {
    */
   size: PropTypes.oneOf(Object.keys(sizes)),
 };
-
-export default Button;

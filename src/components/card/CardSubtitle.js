@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./card.css";
 
-const CardSubtitle = ({ children }) => (
+export const CardSubtitle = ({ children }) => (
   <h2 className="card__subtitle">{children}</h2>
 );
 
@@ -12,5 +12,3 @@ CardSubtitle.propTypes = {
    */
   children: PropTypes.string.isRequired,
 };
-
-export default CardSubtitle;
