@@ -1,0 +1,89 @@
+/* Base for label styling */
+input[type="radio"]:not(:checked),
+input[type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="radio"]:not(:checked) + label,
+input[type="radio"]:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+  color: rgb(139, 139, 139);
+  font-weight: 300;
+  font-family: roboto, helvetica, sans-serif;
+}
+
+/* radio aspect */
+input[type="radio"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.25em;
+  height: 1.25em;
+  /* border: 1px solid #ccc; */
+  background: rgba(204, 218, 226, 0.349);
+  border-radius: 1.25em;
+
+  box-shadow: inset -8px -8px 16px 0px rgba(255, 255, 255, 0.5),
+    inset 6px 6px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* checked mark aspect */
+input[type="radio"]:not(:checked) + label:after,
+input[type="radio"]:checked + label:after {
+  content: "\2022\0020";
+  position: absolute;
+  top: -1.6rem;
+  left: -0.9rem;
+  font-size: 5rem;
+  line-height: 0.8;
+  color: #999; /* tick color */
+  transition: all 0.2s;
+  font-family: "Lucida Sans Unicode", "Arial Unicode MS", Arial;
+}
+
+/* checked mark aspect changes */
+input[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+input[type="radio"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* disabled radio */
+input[type="radio"]:disabled:not(:checked) + label:before,
+input[type="radio"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+
+input[type="radio"]:disabled:checked + label:after {
+  color: #999;
+}
+
+input[type="radio"]:disabled + label {
+  color: #aaa;
+}
+
+/* accessibility */
+input[type="radio"]:checked:focus + label:before,
+input[type="radio"]:not(:checked):focus + label:before {
+  /* position: absolute;
+    top: -1.6rem; left: -0.9rem;
+    border: 2px solid blue; */
+}
+
+/* hover style just for information */
+label:hover:before {
+  /* position: absolute;
+  top: 0; left: 0;
+  border: 2px solid #4778d9 !important; */
+}

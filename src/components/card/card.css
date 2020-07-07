@@ -1,0 +1,58 @@
+.flat {
+  background-color: rgba(204, 218, 226, 0.349);
+}
+
+.bottom-right {
+  box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    -8px -8px 16px 0 rgba(255, 255, 255, 0.5);
+}
+
+.card {
+  width: 25vw;
+  border-radius: 1rem;
+  font-family: roboto, helvetica, sans-serif;
+  color: rgb(139, 139, 139);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.card__body {
+  padding: 1rem;
+}
+
+.card__title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.card__subtitle {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.card__text {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card__img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin: 0;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card__header {
+  background-color: #999;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  margin: 0;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  font-size: 1.25rem;
+}

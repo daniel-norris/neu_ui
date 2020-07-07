@@ -1,0 +1,66 @@
+progress {
+  width: 20rem;
+  height: 0.8rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+
+  border-radius: 0.5rem;
+  background-color: rgba(204, 218, 226, 0.349);
+  box-shadow: inset -8px -8px 16px 0px rgba(255, 255, 255, 0.5),
+    inset 6px 6px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 0.5rem;
+  background-color: rgba(204, 218, 226, 0.349);
+  box-shadow: inset -8px -8px 16px 0px rgba(255, 255, 255, 0.5),
+    inset 6px 6px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+progress::-webkit-progress-value {
+  border-radius: 0.5rem;
+  height: 0.8rem;
+  border: none;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(244, 167, 129, 1) 0%,
+    rgba(245, 186, 125, 1) 63%,
+    rgba(245, 203, 122, 1) 100%
+  );
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2); /* needs uniformity */
+}
+
+progress::-moz-progress-bar {
+  border-radius: 0.5rem;
+  height: 0.8rem;
+  border: none;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(244, 167, 129, 1) 0%,
+    rgba(245, 186, 125, 1) 63%,
+    rgba(245, 203, 122, 1) 100%
+  );
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2); /* needs uniformity */
+}
+
+progress::-ms-fill {
+  border-radius: 0.5rem;
+  height: 0.8rem;
+  border: none;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(244, 167, 129, 1) 0%,
+    rgba(245, 186, 125, 1) 63%,
+    rgba(245, 203, 122, 1) 100%
+  );
+  /* box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2); doesnt work in edge */
+}
+
+/* progress:indeterminate {
+
+} */

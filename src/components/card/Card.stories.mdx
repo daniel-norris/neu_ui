@@ -1,0 +1,145 @@
+import { withKnobs, text, color } from "@storybook/addon-knobs";
+import { Preview, Meta, Story, Props } from "@storybook/addon-docs/blocks";
+
+import Card from "./Card";
+import CardHeader from "./CardHeader";
+import CardBody from "./CardBody";
+import CardTitle from "./CardTitle";
+import CardText from "./CardText";
+import CardSubtitle from "./CardSubtitle";
+import CardImg from "./CardImg";
+import Button from "../buttons/Button";
+
+<Meta title="Card" component={Card} decorators={[withKnobs]} />
+
+# Cards
+
+For displaying information.
+
+## Example
+
+Card components must have a `Card` element to display styling and `CardBody` for spacing to display correctly. The rest of the components can be mixed and matched.
+
+<Preview>
+  <Story name="Headed Card">
+    <Card>
+      <CardHeader>{text("Feature", "Card Header")}</CardHeader>
+      <CardBody>
+        <CardTitle>{text("Title", "Card Title")}</CardTitle>
+        <CardSubtitle>{text("Subtitle", "Card Subtitle")}</CardSubtitle>
+        <CardText>
+          {text(
+            "Text",
+            "The cards text is included here. This can help to create a large part of the cards content."
+          )}
+        </CardText>
+        <Button size="sml">{text("Label", "Read More")}</Button>
+      </CardBody>
+    </Card>
+  </Story>
+</Preview>
+
+## CardBody
+
+Use this to space content evenly inside a `Card`.
+
+<Preview>
+  <Story name="Body">
+    <Card>
+      <CardBody>
+        {text(
+          "Text",
+          "This is a standard card component. The CardBody component spaces the content evenly across the card."
+        )}
+      </CardBody>
+    </Card>
+    ;
+  </Story>
+</Preview>
+
+## CardTitle and CardSubtitle
+
+Use these to add titles to your `Card` components.
+
+<Preview>
+  <Story name="Titled Card">
+    <Card>
+      <CardBody>
+        <CardTitle>{text("Title", "Card Title")}</CardTitle>
+        <CardSubtitle>{text("Subtitle", "Card Subtitle")}</CardSubtitle>
+        <CardText>
+          {text(
+            "Text",
+            "The cards text is included here. This can help to create a large part of the cards content."
+          )}
+        </CardText>
+        <Button size="sml">{text("Label", "More")}</Button>
+      </CardBody>
+    </Card>
+  </Story>
+</Preview>
+
+## CardImg
+
+Final use case aligns any image into the card. The `CardImg` component needs to be placed within a `Card` component.
+
+<Preview>
+  <Story name="Card Image">
+    <Card>
+      <CardImg alt="a placeholder" src="http://placehold.jp/300x180.png" />
+      <CardBody>
+        <CardTitle>{text("Title", "Card Title")}</CardTitle>
+        <CardSubtitle>{text("Subtitle", "Card Subtitle")}</CardSubtitle>
+        <CardText>
+          {text(
+            "Text",
+            "The cards text is included here. This can help to create a large part of the cards content."
+          )}
+        </CardText>
+        <Button size="sml">{text("Label", "More")}</Button>
+      </CardBody>
+    </Card>
+  </Story>
+</Preview>
+
+## Usage
+
+```jsx
+import Card from "neu-ui/Card";
+
+<Card>
+  <CardBody>An imported card.</CardBody>
+</Card>;
+```
+
+## Props
+
+Check props for each component below.
+
+#### Card
+
+<Props of={Card} />
+
+#### CardHeader
+
+<Props of={CardHeader} />
+
+#### CardBody
+
+<Props of={CardBody} />
+
+#### CardTitle
+
+<Props of={CardTitle} />
+
+#### CardSubtitle
+
+<Props of={CardSubtitle} />
+
+#### CardText
+
+<Props of={CardText} />
+
+#### CardImg
+
+<Props of={CardImg} />
