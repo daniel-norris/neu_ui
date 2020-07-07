@@ -53,7 +53,7 @@ import { Card } from 'ui-neu'
 
 ## Contributing
 
-If you're interested in contributing, I'm happy to accept any support from documentation, to bugfixes to new feature improvements.
+If you're interested in contributing, then any support from documentation, to bugfixes to even new feature improvements is welcome.
 
 - Pull requests and ⭐ stars are welcome!
 - Read the [contribution guide](/contributing.md) to get started
