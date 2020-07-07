@@ -1,0 +1,32 @@
+import { Preview, Meta, Story, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, text, color } from "@storybook/addon-knobs";
+
+import { Button } from "./Button";
+
+<Meta title="Button" component={Button} />
+
+# Button
+
+You know... for clicking things.
+
+## Example
+
+Currently available props for `Button` is just limited to size at the moment but more planned.
+
+<Preview>
+  <Story name="Standard" height="100px">
+    <Button size="small">Submit</Button>
+  </Story>
+</Preview>
+
+## Usage
+
+`import { Button } from "ui-neu"`
+
+```jsx
+<Button size="small">Submit</Button>
+```
+
+## Props
+
+<Props of={Button} />

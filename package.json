@@ -1,0 +1,83 @@
+{
+  "name": "ui-neu",
+  "version": "0.1.15-2",
+  "description": "Neu UI, a responsive React component library.",
+  "private": false,
+  "main": "dist/index.js",
+  "keywords": [
+    "react",
+    "library",
+    "component",
+    "ui",
+    "neumorphic"
+  ],
+  "author": {
+    "name": "Dan Norris",
+    "email": "dan.norris@hotmail.com",
+    "url": "https://www.danielnorris.co.uk"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/preset-react": "^7.10.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "polished": "^3.6.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daniel-norris/neu_ui"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "build-storybook-docs": "build-storybook -s public --docs"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@storybook/addon-a11y": "^6.0.0-beta.43",
+    "@storybook/addon-actions": "^6.0.0-beta.43",
+    "@storybook/addon-docs": "^6.0.0-beta.43",
+    "@storybook/addon-knobs": "^6.0.0-beta.43",
+    "@storybook/addon-links": "^6.0.0-beta.43",
+    "@storybook/addons": "^6.0.0-beta.43",
+    "@storybook/preset-create-react-app": "^3.1.3",
+    "@storybook/react": "^6.0.0-beta.43",
+    "@storybook/theming": "^5.3.19",
+    "auto": "^9.40.6",
+    "babel-loader": "^8.1.0",
+    "chromatic": "^5.0.0",
+    "cross-env": "^7.0.2",
+    "prettier": "^2.0.5",
+    "react-is": "^16.13.1"
+  }
+}

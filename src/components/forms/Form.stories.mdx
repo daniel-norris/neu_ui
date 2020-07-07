@@ -1,0 +1,199 @@
+import { text } from "@storybook/addon-knobs";
+import { Preview, Meta, Story, Props } from "@storybook/addon-docs/blocks";
+
+import { Check } from "./Check";
+import { Radio } from "./Check";
+import { Form } from "./Form";
+import { FormGroup } from "./FormGroup";
+import { Input } from "./Input";
+import { Label } from "./Label";
+import { Select } from "./Select";
+import { Slider } from "./Slider";
+import { TextArea } from "./TextArea";
+import { Toggle } from "./Toggle";
+
+<Meta title="Form" component={Form} />
+
+# Forms
+
+For capturing information.
+
+## Example
+
+The `input` component enables the user to input text into a form. It takes a `type` prop.
+
+<Preview>
+  <Story name="Input">
+    <FormGroup>
+      <Label id={"testInput"}>{text("Label", "Input")}</Label>
+      <Input
+        placeholder={text("Placeholder", "Enter input here...")}
+        type={"text"}
+        id={"testInput"}
+        name={"testInput"}
+      />
+    </FormGroup>
+  </Story>
+</Preview>
+
+## TextArea
+
+A multi-line text input field. The `cols` and `row` props enable you to determine the size of the input field.
+
+<Preview>
+  <Story name="TextArea">
+    <FormGroup>
+      <Label id={"testTextArea"}>{text("Label", "Textarea")}</Label>
+      <TextArea
+        id={"testTextArea"}
+        name={"testTextArea"}
+        placeholder={text("Placeholder", "Enter text here...")}
+        cols={33}
+        row={3}
+      />
+    </FormGroup>
+  </Story>
+</Preview>
+
+## Slider
+
+The range slider component enables you to set a `min` and `max` props.
+
+<Preview>
+  <Story name="Slider">
+    <FormGroup>
+      <Label id={"testSlider"}>{text("Label", "Slider")}</Label>
+      <Slider min={0} max={100} />
+    </FormGroup>
+  </Story>
+</Preview>
+
+## Select
+
+The `Select` component accepts an `options` prop for an array of values to iterate as options for the user.
+
+<Preview>
+  <Story name="Select">
+    <FormGroup>
+      <Label>Select</Label>
+      <Select options={["egg", "milk", "bread"]}>Choose an option</Select>
+    </FormGroup>
+  </Story>
+</Preview>
+
+## Checkbox
+
+The `Check` component accepts a `disabled` and `type` prop. Further support scheduled.
+
+<Preview>
+  <Story name="Checkbox">
+    <FormGroup>
+      <Check
+        type={"checkbox"}
+        id={"testCheckBox"}
+        label={text("testCheckBox", "Checkbox")}
+      />
+      <Check
+        disabled
+        type={"checkbox"}
+        id={"testCheckBox-disabled"}
+        label={text("testCheckBoxDisabled", "Checkbox disabled")}
+      />
+    </FormGroup>
+  </Story>
+</Preview>
+
+## Radio
+
+The `Radio` component accepts a `disabled` and `type` prop. Further support scheduled.
+
+<Preview>
+  <Story name="Radio">
+    <FormGroup>
+      <Radio
+        type={"radio"}
+        id={"testRadio1"}
+        label={text("testRadio1", "Radio")}
+        name={"radio"}
+      />
+      <Radio
+        type={"radio"}
+        id={"testRadio2"}
+        label={text("testRadio2", "Radio")}
+        name={"radio"}
+      />
+      <Radio
+        disabled
+        type={"radio"}
+        id={"testRadio-disabled"}
+        label={text("testRadioDisabled", "Radio disabled")}
+        name={"radio"}
+      />
+    </FormGroup>
+  </Story>
+</Preview>
+
+## Toggle
+
+A `Toggle` component! Returns a boolean value.
+
+<Preview>
+  <Story name="Toggle">
+    <Toggle />
+  </Story>
+</Preview>
+
+## Usage
+
+`import { FormGroup, Label, Select } from 'ui-neu';`
+
+```jsx
+<FormGroup>
+  <Label>Select</Label>
+  <Select options={["egg", "milk", "bread"]}>Choose an option</Select>
+</FormGroup>
+```
+
+## Props
+
+Props for each of the components are included below. This is still under development and changes are anticipated to occur in upcoming releases.
+
+#### Check
+
+<Props of={Check} />
+
+#### Radio
+
+<Props of={Check} />
+
+#### Form
+
+<Props of={Form} />
+
+#### FormGroup
+
+<Props of={FormGroup} />
+
+#### Input
+
+<Props of={Input} />
+
+#### Label
+
+<Props of={Label} />
+
+#### Select
+
+<Props of={Select} />
+
+#### Slider
+
+<Props of={Slider} />
+
+#### TextArea
+
+<Props of={TextArea} />
+
+#### Toggle
+
+<Props of={Toggle} />

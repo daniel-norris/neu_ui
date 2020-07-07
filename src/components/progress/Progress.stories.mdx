@@ -1,0 +1,29 @@
+import { Preview, Meta, Story, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, text, color } from "@storybook/addon-knobs";
+import { Progress } from "./Progress";
+
+<Meta title="Progress" component={Progress} />
+
+# Button
+
+For checking the progress of things.
+
+## Examples
+
+<Preview>
+  <Story name="Standard">
+    <Progress max={100} value={60}></Progress>
+  </Story>
+</Preview>
+
+## Usage
+
+`import { Progress } from 'ui-neu';`
+
+```jsx
+<Progress max={100} value={60}></Progress>
+```
+
+## Props
+
+<Props of={Progress} />
