@@ -14,8 +14,9 @@ Prototype and build projects faster using Neu UI - the neumorphic React componen
 
 - ❓ About
 - 🚀 Getting Started
+- 📝 Documentation
 - 👏 Contributing
-- 📝 License
+- ⚖️ License
 
 ## About
 
@@ -50,6 +51,12 @@ Import a component.
 ```
 import { Card } from 'ui-neu'
 ```
+
+## Docs
+
+Docs are available and include information on props.
+
+[View the Neu UI docs here](https://ui-neu.netlify.app/)
 
 ## Contributing
 
