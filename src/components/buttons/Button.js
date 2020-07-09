@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+// styled components is a tool that enables you to write your css in js, check docs
 import styled from "styled-components";
 
+// using the styled object
 const StyledButton = styled.button`
-  background: red;
+  background: blue;
   color: white;
   padding: 0.375rem 0.75rem;
-  background-color: rgba(204, 218, 226, 0.349);
+  background-color: blue;
   box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
     -8px -8px 16px 0 rgba(255, 255, 255, 0.5);
   font-size: ${(props) => (props.size === "sml" ? "1rem" : "1.5rem ")}
