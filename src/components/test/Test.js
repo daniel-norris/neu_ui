@@ -4,22 +4,25 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 // using the styled object
-const StyledButton = styled.button`
-
+const StyledHeader = styled.h1`
+    color: blue,
+    font-size: ${(props) => (props.size === 'large' ? '15rem' : '3rem')},
+    padding: 3rem
 `;
 
-export const Button = ({ size, children }) => {
-    return <StyledButton size={size}>{children}</StyledButton>;
+// user imports 'header' the function, which is why we're exporting 'header' and not styledheader
+export const Header = ({ size, children }) => {
+    return <StyledHeader size={size}>{children}</StyledHeader>;
 };
 
-Button.propTypes = {
+Header.propTypes = {
     /**
      * Pass children to label the button.
      */
     children: PropTypes.string,
 };
 
-Button.defaultProps = {
+Header.defaultProps = {
     children: null,
     size: "small",
 };
