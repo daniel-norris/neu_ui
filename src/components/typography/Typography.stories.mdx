@@ -1,0 +1,42 @@
+import { Preview, Meta, Story, Props } from "@storybook/addon-docs/blocks";
+
+import { Typography } from "./Typography";
+
+<Meta title="Typography" component={Typography} />
+
+# Typography
+
+Typography component
+
+## Example
+
+Currently available props for `Typography` is just limited to variant at the moment but more planned.
+
+<Preview>
+  <Story name="Standard" height="100px">
+      <div>
+          <Typography variant="h1">h1. Heading</Typography>
+          <Typography variant="h2">h2. Heading</Typography>
+          <Typography variant="h3">h3. Heading</Typography>
+          <Typography variant="h4">h4. Heading</Typography>
+          <Typography variant="h5">h5. Heading</Typography>
+          <Typography variant="h6">h6. Heading</Typography>
+          <Typography variant="subtitle1">subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur</Typography>
+          <Typography variant="subtitle2">subtitle2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur</Typography>
+          <Typography variant="body1">body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur</Typography>
+          <Typography variant="body2">body2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur</Typography>
+    </div>
+  </Story>
+</Preview>
+
+## Usage
+
+`import { Typography } from "ui-neu"`
+
+```jsx
+<Typography variant="h4">Hello</Typography>
+```
+
+## Props
+
+<Props of={Typography} />
