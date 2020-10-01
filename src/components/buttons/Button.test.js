@@ -18,6 +18,7 @@ afterEach(() => {
   container = null;
 });
 
+// tests whether child content is rendered
 it("renders button label", () => {
   act(() => {
     render(<Button>Test</Button>, container);
