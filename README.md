@@ -63,7 +63,7 @@ Docs are available and include information on props.
 If you're interested in contributing, then any support from documentation, to bugfixes to even new feature improvements is welcome.
 
 - Pull requests and ⭐ stars are welcome!
-- Read the [contribution guide](/contributing.md) to get started
+- Read the [contribution guide](CONTRIBUTING.md) to get started
 
 Looking for a first issue to take on?
 
