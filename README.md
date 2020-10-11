@@ -54,7 +54,7 @@ import { Card } from 'ui-neu'
 
 ## Docs
 
-Docs are available and include information on props.
+Docs are available and include information on props, how to start contributing and a contribution guide. 
 
 [View the Neu UI docs here](https://ui-neu.netlify.app/)
 
@@ -64,12 +64,13 @@ If you're interested in contributing, then any support from documentation, to bu
 
 - Pull requests and ⭐ stars are welcome!
 - Read the [start contributing](CONTRIBUTING.md) guide to find out ways in which you can start contributing
-- If you are looking for more detailed information on how to contribute then take a look at our [contribution guide](CONTRIBUTING_GUIDE.md) 
+- If you are looking for more detailed information on how to contribute then take a look at our [contribution guide](CONTRIBUTING_GUIDE.md)
 
 Looking for a first issue to take on?
 
-- Look out for "good first issue" labels
-- Reach out to me, [Dan](https://twitter.com/danielpnorris) on Twitter
+- Look out for [good first issue](https://github.com/daniel-norris/neu_ui/labels/good%20first%20issue) labels
+- Not ready to make a code contribution yet? Then look out for our [documentation](https://github.com/daniel-norris/neu_ui/labels/documentation) labels
+- Need support or help? Reach out to me, [Dan](https://twitter.com/danielpnorris) on Twitter
 
 ## Licence
 
