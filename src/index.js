@@ -19,6 +19,6 @@ export * from "./components/forms/Input";
 export * from "./components/forms/Label";
 export * from "./components/forms/Select";
 export * from "./components/forms/Slider";
-export * from "./components/forms/Switch";
+// export * from "./components/forms/Switch";
 export * from "./components/forms/TextArea";
 export * from "./components/forms/Toggle";
