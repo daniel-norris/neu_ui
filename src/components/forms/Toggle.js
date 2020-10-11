@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import { keyframes } from "styled-components";
 import styled from "styled-components";
 
@@ -84,35 +83,31 @@ const LightOff = styled.div`
 `;
 
 export class Toggle extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { clicked: false };
-    this.handleClick = this.handleClick.bind(this);
-  }
+    constructor(props) {
+        super(props);
+        this.state = { clicked: false };
+        this.handleClick = this.handleClick.bind(this);
+    }
 
-  handleClick() {
-    this.setState({ clicked: !this.state.clicked });
-  }
+    handleClick() {
+        this.setState({ clicked: !this.state.clicked });
+    }
 
-  render() {
-    const { clicked } = this.state;
-    const { color } = this.props;
+    render() {
+        const { clicked } = this.state;
 
-    return (
-      <Wrapper>
-        <ToggleBackground>
-          {clicked ? (
-            <ToggleOn onClick={this.handleClick} />
-          ) : (
-            <ToggleOff onClick={this.handleClick} />
-          )}
-        </ToggleBackground>
-        <LightWrapper>{clicked ? <LightOn /> : <LightOff />}</LightWrapper>
-      </Wrapper>
-    );
-  }
+        return (
+            <Wrapper>
+                <ToggleBackground>
+                    {clicked ? (
+                        <ToggleOn onClick={this.handleClick} />
+                    ) : (
+                            <ToggleOff onClick={this.handleClick} />
+                        )}
+                </ToggleBackground>
+                <LightWrapper>{clicked ? <LightOn /> : <LightOff />}</LightWrapper>
+            </Wrapper>
+        );
+    }
 }
 
-Toggle.propTypes = {};
-
-Toggle.defaultProps = {};
