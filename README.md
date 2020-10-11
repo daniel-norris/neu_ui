@@ -26,7 +26,7 @@ The style was originally conceptualised by [Alexander Plyuto](https://dribbble.c
 
 For further information about the design, it's worthwhile taking a look at Alexander Plyuto's guide [here](https://www.figma.com/file/J1uPSOY5k577mDpSfGFven/Neomorphism-Guide-2.0-%7C-Original?node-id=26580%3A1425).
 
-The initial components have now been converted and extended to include a whole suite of initial controlled form and card components into a React library. It uses React under the hood, Storybook as a tool to visualise the components and Styled Components to well, style the components. 
+The initial components have now been converted and extended to include a whole suite of initial controlled form and card components into a React library. It uses React under the hood, Storybook as a tool to visualise the components and Styled Components to well, style the components.
 
 We are looking for anyone interested in contributing, for further information check out the contribution section below.
 
@@ -63,7 +63,8 @@ Docs are available and include information on props.
 If you're interested in contributing, then any support from documentation, to bugfixes to even new feature improvements is welcome.
 
 - Pull requests and ⭐ stars are welcome!
-- Read the [contribution guide](CONTRIBUTING.md) to get started
+- Read the [start contributing](CONTRIBUTING.md) guide to find out ways in which you can start contributing
+- If you are looking for more detailed information on how to contribute then take a look at our [contribution guide](CONTRIBUTING_GUIDE.md) 
 
 Looking for a first issue to take on?
 
