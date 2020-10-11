@@ -9,14 +9,22 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
-            - run: npm install
-            - run: npm test
-            - run: npx chromatic --project-token=gpeep2z0kqd
-            - run: |
-                if [ $CIRCLE_BRANCH = "master" ]
-                then
-                  npm run release
-                fi
+            - run:
+                name: Install dependencies
+                command: npm install
+            
+            - run:
+                name: Run tests
+                command: npm test
+            
+            - run:
+                name: Deploy package
+                command: |
+                  if [ $CIRCLE_BRANCH = "master" -a -n "$CHROMATIC_PROJECT_TOKEN" ]
+                  then
+                    npx chromatic --project-token="$CHROMATIC_PROJECT_TOKEN"
+                    npm run release
+                  fi
 workflows:
   build-and-test:
     jobs:
