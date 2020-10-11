@@ -51,23 +51,23 @@ const StyledSelect = styled.select`
 `;
 
 export const Select = ({ options, children }) => (
-  <StyledSelect className="mb-2">
-    <option value="">{children}</option>
-    {options.map((value, index) => (
-      <option value={value} key={index}>
-        {value}
-      </option>
-    ))}
-  </StyledSelect>
+    <StyledSelect className="mb-2">
+        <option value="">{children}</option>
+        {options.map((value, index) => (
+            <option value={value} key={index}>
+                {value}
+            </option>
+        ))}
+    </StyledSelect>
 );
 
 Select.propTypes = {
-  children: PropTypes.string,
-  value: PropTypes.string,
-  options: PropTypes.array.isRequired,
+    children: PropTypes.string,
+    value: PropTypes.string,
+    options: PropTypes.array.isRequired,
 };
 
 Select.defaultProps = {
-  children: null,
-  value: null,
+    children: null,
+    value: null,
 };

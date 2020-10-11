@@ -1,39 +1,42 @@
 
 # Contribution Guide
 
+
+
 ## What do I need to know to help?
 If you are looking to help to with a code contribution our project uses:
 
 - React
 - Styled Components
+- Jest
 - Storybook
 
 If you don't feel ready to make a code contribution yet, no problem! You can also check out the documentation issues highlighted with a [`documentation`](https://github.com/daniel-norris/neu_ui/labels/documentation) label or are welcome to make suggestions on the new [`design`](https://github.com/daniel-norris/neu_ui/labels/design) issues label we have created.
 
 If you are interested in making a code contribution and would like to learn more about the technologies that we use, check out the list below.
 
-- React
+### React
 We use React as the backbone for the project. Each component is encapsulated with it's own Storybook `.mdx` file and `.test.js` Jest test as best practice. We will still accept PR submissions without tests. All variants of a component should be kept within the same file and then later exported in `src/index.js` to be made accessible to the user when published to `https://www.npmjs.com/` and later downloaded as a package.
 
 A good example to see how this works in practice is to look at the `Check.js` component located at `src/components/forms/Check.js`.
 
 Official Docs: https://reactjs.org/docs/getting-started.html
 
-- Styled Components
+### Styled Components
 SC is used in lieu of other tools like SASS or CSS as it provides a number of benefits to a component library. The tool uses CSS-in-JS and template literals to style html elements. For further information, take a look at the docs and some of the other components to see how this is done in practice.
 
-Official Docs: https://styled-components.com/
+- Official Docs: https://styled-components.com/
 
-- Jest
+### Jest
 If you're not familiar with testing with Jest, then don't worry. We're still happy to accept any contributions you are able to make. If you are able to use Jest, then including test cases with your PR submissions would be fantastic!
 
-Official Docs: https://jestjs.io/
+- Official Docs: https://jestjs.io/
 
-- Storybook
+### Storybook
 We use Storybook as a style guide and a tool to produce online technical documentation for the library. Again, we're happy to accept PR requests that don't include a Storybook `.mdx` file for the component but if you are comfortable creating one then that would be fantastic. You can take a look at the other components to see how it's done and the links below. A nice simple example to start with would be the `Button.js` component.
 
-Official Docs: https://storybook.js.org/
-How to update MDX stories for new components: https://storybook.js.org/docs/react/writing-docs/mdx
+- Official Docs: https://storybook.js.org/
+- How to update MDX stories for new components: https://storybook.js.org/docs/react/writing-docs/mdx
 
 ## Never made an open source contribution before? Wondering how contributions work in the in our project? Here's a quick rundown!
 
@@ -56,10 +59,12 @@ How to update MDX stories for new components: https://storybook.js.org/docs/reac
 After you have forked and cloned the project onto your machine you can run the following to start getting the project to run on your machine.
 
 `npm start`
-This will start the create-react-app in your browser at port:3000. On a Windows OS that will be `http://localhost:3000/`. Nothing will currently appear as the project hasn't been built like this but you can use it as a sandbox environment while you build your components.
+
+This will start the create-react-app in your browser at port 3000. On a Windows OS that will be `http://localhost:3000/`. Nothing will currently appear as the project hasn't been built like this but you can use it as a sandbox environment while you build your components.
 
 `npm run storybook`
-This is how most development has been done and will enable you to not only test your components but also test Storybook documentation and prop type information too. It's up to you how you wish to build though.
+
+This is how most development has been done and will enable you to not only test your components but also test Storybook documentation and prop type information too. It's up to you how you wish to build though. This will be available on port 9009 or on a Windows OS `http://localhost:9009`.
 
 ## Where can I go for help?
 If you need help, you can ask questions on the issue itself or DM me on Twitter at https://twitter.com/danielpnorris.
