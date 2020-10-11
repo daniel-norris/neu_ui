@@ -1,7 +1,6 @@
 # Neu UI
 
 ![github issues shield](https://img.shields.io/github/issues/daniel-norris/neumorphic_design)
-![circleci](https://img.shields.io/circleci/build/github/daniel-norris/neu_ui/master?label=circleci)
 ![releases](https://img.shields.io/github/v/release/daniel-norris/neu_ui?include_prereleases)
 ![github licence](https://img.shields.io/github/license/daniel-norris/neu_ui)
 ![github commit activity shield](https://img.shields.io/github/commit-activity/m/daniel-norris/neumorphic_design)
