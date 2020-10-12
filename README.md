@@ -1,6 +1,7 @@
 # Neu UI
 
 ![github issues shield](https://img.shields.io/github/issues/daniel-norris/neumorphic_design)
+![ci build](https://img.shields.io/circleci/build/github/daniel-norris/neu_ui/master?label=circleci&token=p4qh2h9o85)
 ![releases](https://img.shields.io/github/v/release/daniel-norris/neu_ui?include_prereleases)
 ![github licence](https://img.shields.io/github/license/daniel-norris/neu_ui)
 ![github commit activity shield](https://img.shields.io/github/commit-activity/m/daniel-norris/neumorphic_design)
@@ -53,7 +54,7 @@ import { Card } from 'ui-neu'
 
 ## Docs
 
-Docs are available and include information on props, how to start contributing and a contribution guide. 
+Docs are available and include information on props, how to start contributing and a contribution guide.
 
 [View the Neu UI docs here](https://ui-neu.netlify.app/)
 
