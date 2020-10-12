@@ -5,7 +5,7 @@
 ![github licence](https://img.shields.io/github/license/daniel-norris/neu_ui)
 ![github commit activity shield](https://img.shields.io/github/commit-activity/m/daniel-norris/neumorphic_design)
 ![twitter](https://img.shields.io/twitter/follow/danielpnorris)
-![Repository example](src/demo.gif)
+![repository example](src/demo.gif)
 
 Prototype and build projects faster using Neu UI - the neumorphic React component library.
 
@@ -53,7 +53,7 @@ import { Card } from 'ui-neu'
 
 ## Docs
 
-Docs are available and include information on props, how to start contributing and a contribution guide. 
+Docs are available and include information on props, how to start contributing and a contribution guide.
 
 [View the Neu UI docs here](https://ui-neu.netlify.app/)
 
