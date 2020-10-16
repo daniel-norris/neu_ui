@@ -6,7 +6,7 @@
 ![github licence](https://img.shields.io/github/license/daniel-norris/neu_ui)
 ![github commit activity shield](https://img.shields.io/github/commit-activity/m/daniel-norris/neumorphic_design)
 ![twitter](https://img.shields.io/twitter/follow/danielpnorris)
-![Repository example](src/demo.gif)
+![Repository example](../../src/demo.gif)
 
 Prototype and xây dựng dự án nhanh hơn sử dụng Neu UI - Thư viện React component mới.
 

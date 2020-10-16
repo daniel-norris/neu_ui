@@ -20,7 +20,7 @@ Prototype and build projects faster using Neu UI - the neumorphic React componen
 - 🚀 Getting Started
 - 📝 Documentation
 - 👏 Contributing
-- ⚖️ License
+- ⚖️ Licence
 
 ## About
 
