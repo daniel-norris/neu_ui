@@ -25,7 +25,7 @@ Style ini pada awalnya dikonseptualisasikan oleh [Alexander Plyuto](https://drib
 
 Untuk maklumat lebih lanjut mengenai reka bentuk, ada baiknya melihat panduan Alexander Plyuto [di sini](https://www.figma.com/file/J1uPSOY5k577mDpSfGFven/Neomorphism-Guide-2.0-%7C-Original?node-id=26580%3A1425).
 
-Komponen awal kini telah ditukar dan diperluas untuk merangkumi keseluruhan rangkaian bentuk dan komponen kad terkawal menjadi library React. Ia menggunakan React dibawahnya, Storybook sebagai alat untuk memvisualisasikan komponen dan Komponen Style untuk well, menggayakan komponennya.
+Komponen awal kini telah ditukar dan diperluas untuk merangkumi keseluruhan rangkaian bentuk dan komponen kad terkawal menjadi library React. Ia menggunakan React dibawahnya, Storybook sebagai alat untuk memvisualisasikan komponen dan Styled Components untuk well, mengayakan komponennya.
 
 Kami mencari sesiapa sahaja yang berminat untuk menyumbang, untuk maklumat lebih lanjut, lihat bahagian sumbangan di bawah.
 
@@ -67,7 +67,7 @@ Sekiranya anda berminat untuk menyumbang, maka sokongan daripada segi dokumentas
 
 Mencari isu pertama yang perlu diselesaikan?
 
-- Nantikan [isu pertama yang baik](https://github.com/daniel-norris/neu_ui/labels/good%20first%20issue) labels
+- Nantikan label [isu pertama yang baik](https://github.com/daniel-norris/neu_ui/labels/good%20first%20issue)
 - Belum bersedia untuk membuat sumbangan kod? Maka lihatlah label [dokumentasi](https://github.com/daniel-norris/neu_ui/labels/documentation) kami
 - Perlukan sokongan atau pertolongan? Hubungi saya, [Dan](https://twitter.com/danielpnorris) di Twitter
 
