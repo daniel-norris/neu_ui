@@ -5,7 +5,7 @@
 ![github licence](https://img.shields.io/github/license/daniel-norris/neu_ui)
 ![github commit activity shield](https://img.shields.io/github/commit-activity/m/daniel-norris/neumorphic_design)
 ![twitter](https://img.shields.io/twitter/follow/danielpnorris)
-![repository example](src/demo.gif)
+![repository example](../../src/demo.gif)
 
 Costruisci prototipi e progetti più velocemente usando New UI - la libreria neumorfica di componenti React.
 
@@ -62,8 +62,8 @@ E' disponibile la documentazione ed include informazioni sulle props, su come in
 Se sei interessato a contribuire, qualunque aiuto per documentazione, bugfix, o nuove feature e miglioramenti, è il benvenuto.
 
 - Pull requests e ⭐ stelline sono le benvenute!
-- Leggi la guida [inizia a contribuire](CONTRIBUTING.md) per capire come iniziare a contribuire
-- Se stai cercando informazioni più dettagliate su come contribuire allora dai un'occhiata alla nostra [guida alla contribuzione](CONTRIBUTING_GUIDE.md)
+- Leggi la guida [inizia a contribuire](../../CONTRIBUTING.md) per capire come iniziare a contribuire
+- Se stai cercando informazioni più dettagliate su come contribuire allora dai un'occhiata alla nostra [guida alla contribuzione](../../CONTRIBUTING_GUIDE.md)
 
 Cerchi un issue per iniziare?
 
@@ -73,4 +73,4 @@ Cerchi un issue per iniziare?
 
 ## Licenza
 
-Questo progetto è rilasciato sotto licenza [MIT](/LICENCE).
+Questo progetto è rilasciato sotto licenza [MIT](../../LICENSE).
