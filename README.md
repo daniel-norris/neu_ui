@@ -80,4 +80,4 @@ Looking for a first issue to take on?
 
 ## Licence
 
-This project is [MIT](/LICENCE) licenced.
+This project is [MIT](/LICENSE) licenced.
