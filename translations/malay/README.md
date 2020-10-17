@@ -62,13 +62,13 @@ Dokumen tersedia dan merangkumi maklumat mengenai cara menyokong, cara memulakan
 Sekiranya anda berminat untuk menyumbang, maka sokongan daripada segi dokumentasi, perbaikan bug hingga ke peningkatan ciri-ciri baru dialu-alukan.
 
 - Pull requests dan ⭐ bintang dialu-alukan!
-- Baca [mula menyumbang](CONTRIBUTING.md) panduan untuk mengetahui cara-cara di mana anda boleh mula menyumbang
-- Sekiranya anda mencari maklumat yang lebih terperinci mengenai cara menyumbang, lihatlah [panduan sumbangan] kami(CONTRIBUTING_GUIDE.md)
+- Baca [mula menyumbang](/CONTRIBUTING.md) panduan untuk mengetahui cara-cara di mana anda boleh mula menyumbang
+- Sekiranya anda mencari maklumat yang lebih terperinci mengenai cara menyumbang, lihatlah [panduan sumbangan](/CONTRIBUTING_GUIDE.md) kami
 
 Mencari isu pertama yang perlu diselesaikan?
 
 - Nantikan [isu pertama yang baik](https://github.com/daniel-norris/neu_ui/labels/good%20first%20issue) labels
-- Belum bersedia untuk membuat sumbangan kod? Maka lihatlah [dokumentasi] kami(https://github.com/daniel-norris/neu_ui/labels/documentation) labels
+- Belum bersedia untuk membuat sumbangan kod? Maka lihatlah label [dokumentasi](https://github.com/daniel-norris/neu_ui/labels/documentation) kami
 - Perlukan sokongan atau pertolongan? Hubungi saya, [Dan](https://twitter.com/danielpnorris) di Twitter
 
 ## Lesen
