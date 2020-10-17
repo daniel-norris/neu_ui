@@ -14,6 +14,10 @@ Prototype and build projects faster using Neu UI - the neumorphic React componen
 
 - [Brazilian Portuguese](./translations/portuguese/README.md)
 
+- [French](./translations/french/readme.md)
+
+- [Malay](./translations/malay/README.md)
+
 ## Contents
 
 - ❓ About
