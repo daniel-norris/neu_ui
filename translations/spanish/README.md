@@ -25,7 +25,7 @@ El estilo originalmente fue conceptualizado por [Alexander Plyuto](https://dribb
 
 Para más información sobre el diseño, vale la pena dando un vistazo en guía de Alexander Plyuto [aquí](https://www.figma.com/file/J1uPSOY5k577mDpSfGFven/Neomorphism-Guide-2.0-%7C-Original?node-id=26580%3A1425).
 
-Los componentes iniciales han sido ahora convertidos y ampliados incluir toda una suite de forma inicial controlada y componentes de la tarjeta en una biblioteca de React. Utiliza React bajo el capó, Storybook como una herramienta para visualizar los componentes y Componentes con estilo para bien, aplicar estilo a los componentes.
+Los componentes iniciales han sido ahora convertidos y ampliados incluir toda una suite de forma inicial controlada y componentes de la tarjeta en una biblioteca de React. Utiliza React bajo el capó, Storybook como una herramienta para visualizar los componentes y Styled Components para bien, aplicar estilo a los componentes.
 
 Estamos mirando a cualquier persona interesada en contribuir, para obtener más información, consulte la sección de contribución debajo.
 
