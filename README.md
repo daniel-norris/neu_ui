@@ -14,6 +14,8 @@ Prototype and build projects faster using Neu UI - the neumorphic React componen
 
 - [Brazilian Portuguese](./translations/portuguese/README.md)
 
+- [Italian](./translations/italian/README.md)
+
 ## Contents
 
 - ❓ About
@@ -78,4 +80,4 @@ Looking for a first issue to take on?
 
 ## Licence
 
-This project is [MIT](/LICENCE) licenced.
+This project is [MIT](/LICENSE) licenced.
