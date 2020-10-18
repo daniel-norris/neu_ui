@@ -39,8 +39,8 @@ const StyledRadioInput = styled.input.attrs({
   :checked + label:after {
     content: "\\2022\\0020";
     position: absolute;
-    top: -1.6rem;
-    left: -0.9rem;
+    top: ${props => props.isMobile ? '-1.29rem' : '-1.6rem'};
+    left: ${props => props.isMobile ? '-0.19rem' : '-0.96rem'};
     font-size: 5rem;
     line-height: 0.8;
     color: #999; /* tick color */
@@ -164,18 +164,22 @@ export const Check = ({ disabled, id, label, name }) => (
   </>
 );
 
-export const Radio = ({ disabled, id, label, name }) => (
-  <>
-    <p>
-      <StyledRadioInput
-        id={id}
-        name={name ? name : null}
-        disabled={disabled ? disabled : null}
-      />
-      <label htmlFor={id}>{label}</label>
-    </p>
-  </>
-);
+export const Radio = ({ disabled, id, label, name }) => {
+  const isMobile = /Android|iPhone|Mobile/i.test(navigator.userAgent);
+  return (
+    <>
+      <p>
+        <StyledRadioInput
+          id={id}
+          name={name ? name : null}
+          disabled={disabled ? disabled : null}
+          isMobile={isMobile}
+        />
+        <label htmlFor={id}>{label}</label>
+      </p>
+    </>
+  );
+}
 
 Check.propTypes = {
   /**
