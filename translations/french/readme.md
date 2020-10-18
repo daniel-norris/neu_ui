@@ -62,8 +62,8 @@ La documentation inclue des informations sur les props, de l'aide pour commencer
 Si vous souhaitez contribuer, nous acceptons avec plaisir toute aide, que ce soit de la documentation, de la correction de bugs ou même du développement d'améliorations.
 
 - Les « pull requests » et les ⭐ étoiles sont les bienvenues !
-- Lisez le guide sur [commencer à contribuer](CONTRIBUTING.md) pour savoir par où commencer
-- Si vous cherchez des informations plus détaillées sur comment contribuer, alors penchez-vous sur le [guide de contribution](CONTRIBUTING_GUIDE.md)
+- Lisez le guide sur [commencer à contribuer](/CONTRIBUTING.md) pour savoir par où commencer
+- Si vous cherchez des informations plus détaillées sur comment contribuer, alors penchez-vous sur le [guide de contribution](/CONTRIBUTING_GUIDE.md)
 
 Vous cherchez une « issue » pour une première contribution au projet ?
 

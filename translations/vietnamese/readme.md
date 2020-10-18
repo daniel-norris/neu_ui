@@ -63,7 +63,7 @@ Tài liệu có sẵn và chứ các thông tin về props
 Nếu bạn quan tâm đến việc contributing, thì mọi hỗ trợ từ tài liệu, đến các bản sửa lỗi thậm chí là các cải tiến tính năng mới đều được hoan nghênh.
 
 - Pull requests và ⭐ stars được chào đón!
-- Đọc [hướng dẫn contribution](CONTRIBUTING.md) để bắt đầu
+- Đọc [hướng dẫn contribution](/CONTRIBUTING.md) để bắt đầu
 
 Tìm kiếm một vấn đề đầu tiên để xử lý?
 
