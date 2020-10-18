@@ -38,6 +38,7 @@
     "start": "react-scripts start",
     "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
+    "test:cov": "jest --coverage",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
