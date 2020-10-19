@@ -27,9 +27,17 @@ it("renders button label", () => {
   expect(container.textContent).toBe("Test");
 });
 
+
 it("renders button with small font size by default", () => {
   act(() => {
     render(<Button>Test</Button>, container);
   });
   expect(container.children[0]).toHaveStyle("font-size: 1rem");
+});
+
+it("renders button with large font size", () => {
+  act(() => {
+    render(<Button size="large">Test</Button>, container);
+  });
+  expect(container.children[0]).toHaveStyle("font-size: 1.5rem");
 });
