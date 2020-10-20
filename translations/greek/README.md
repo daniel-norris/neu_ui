@@ -5,7 +5,7 @@
 ![github licence](https://img.shields.io/github/license/daniel-norris/neu_ui)
 ![github commit activity shield](https://img.shields.io/github/commit-activity/m/daniel-norris/neumorphic_design)
 ![twitter](https://img.shields.io/twitter/follow/danielpnorris)
-![repository example](src/demo.gif)
+![repository example](../../src/demo.gif)
 
 Δημιούργησε πρωτότυπα και πρότζεκτς ταχύτερα χρησιμοποιώντας Neu UI - την βιβλιοθήκη νεομορφικών (neumorphic) react συστατικών.
 
