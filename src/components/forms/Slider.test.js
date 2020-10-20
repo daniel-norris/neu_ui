@@ -18,7 +18,7 @@ describe("Slider test suite", () => {
 		container = null;
 	});
 
-	it("renders Select children props", () => {
+	it("renders Slider children props", () => {
 		act(() => {
 			render(<Slider min={0} max={100} />, container);
 		});
