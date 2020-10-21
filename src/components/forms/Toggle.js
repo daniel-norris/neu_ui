@@ -82,6 +82,19 @@ const LightOff = styled.div`
   background-color: rgb(223, 223, 223);
 `;
 
+const HiddenNativeCheckbox = styled.input.attrs({ type: 'checkbox' })`
+border: 0;
+clip: rect(0 0 0 0);
+clippath: inset(50%);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+white-space: nowrap;
+width: 1px;
+`;
+
 export class Toggle extends Component {
     constructor(props) {
         super(props);
@@ -98,12 +111,13 @@ export class Toggle extends Component {
 
         return (
             <Wrapper>
+                <HiddenNativeCheckbox checked={clicked} onChange={this.handleClick} />
                 <ToggleBackground>
-                    {clicked ? (
-                        <ToggleOn onClick={this.handleClick} />
-                    ) : (
-                            <ToggleOff onClick={this.handleClick} />
-                        )}
+                    {
+                        clicked ?
+                        <ToggleOn onClick={this.handleClick} />:
+                        <ToggleOff onClick={this.handleClick} />
+                    }
                 </ToggleBackground>
                 <LightWrapper>{clicked ? <LightOn /> : <LightOff />}</LightWrapper>
             </Wrapper>
