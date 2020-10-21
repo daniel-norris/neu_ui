@@ -29,6 +29,7 @@ line-height: 1.5;
 
 &:hover {
   color: rgba(139, 139, 139, 0.788);
+  cursor: pointer;
 }
 `;
 
