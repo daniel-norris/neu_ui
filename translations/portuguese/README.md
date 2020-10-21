@@ -62,7 +62,7 @@ Documentos estão disponíveis e incluem informações sobre propriedades, como 
 Se você estiver interessado em contribuir, então qualquer ajuda de documentação, correções de _bugs_ e até mesmo novas melhorias de recursos seja muito bem-vindo!
 
 - _Pull requests_ e ⭐ estrelas são bem vindas!
-- Leia o guia [começando a contribuir](/CONTRIBUTING.md) para descobrir maneiras pelas quais você pode começar a contribuir
+- Leia o guia [começando a contribuir](./CONTRIBUTING.md) para descobrir maneiras pelas quais você pode começar a contribuir
 - Se você está procurando informações mais detalhadas sobre como contribuir, dê uma olhada em nosso [guia de contribuição](/CONTRIBUTING_GUIDE.md)
 
 Procurando por uma primeira _issue_?

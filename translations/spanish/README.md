@@ -5,7 +5,7 @@
 ![github licence](https://img.shields.io/github/license/daniel-norris/neu_ui)
 ![github commit activity shield](https://img.shields.io/github/commit-activity/m/daniel-norris/neumorphic_design)
 ![twitter](https://img.shields.io/twitter/follow/danielpnorris)
-![repository example](src/demo.gif)
+![repository example](../../src/demo.gif)
 
 Crear un prototipo y construir proyectos más rápido usando Neu UI - la biblioteca de componente neumórfico React
 

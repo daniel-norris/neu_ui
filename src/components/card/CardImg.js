@@ -12,7 +12,7 @@ const StyledCardImg = styled.img`
 `;
 
 export const CardImg = ({ src, alt }) => (
-  <StyledCardImg alt={alt ? alt : null} src={src}></StyledCardImg>
+  <StyledCardImg alt={alt} src={src}></StyledCardImg>
 );
 
 CardImg.propTypes = {
@@ -23,7 +23,7 @@ CardImg.propTypes = {
   /**
    * Enter alt text for accessibility
    */
-  alt: PropTypes.string.isRequired,
+  alt: PropTypes.string,
 };
 
 CardImg.defaultProps = {
