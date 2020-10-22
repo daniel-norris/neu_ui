@@ -10,13 +10,15 @@
 Prototype and build projects faster using Neu UI - the neumorphic React component library.
 
 ## Translations
-- [Vietnamese](./translations/vietnamese/readme.md)
+- [Vietnamese](./translations/vietnamese/README.md)
 - [Brazilian Portuguese](./translations/portuguese/README.md)
-- [French](./translations/french/readme.md)
+- [French](./translations/french/README.md)
 - [Malay](./translations/malay/README.md)
 - [Italian](./translations/italian/README.md)
 - [Polish](./translations/polish/README.md)
 - [Greek](./translations/greek/README.md)
+- [German](./translations/german/README.md)
+- [Spanish](./translations/spanish/README.md)
 
 ## Contents
 
