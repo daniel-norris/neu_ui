@@ -1,10 +1,10 @@
 import React from "react";
-import { act } from "react-dom/test-utils";
+import { act, Simulate } from "react-dom/test-utils";
 import { render, unmountComponentAtNode } from "react-dom";
 
 import { Toggle } from "./Toggle";
 
-describe("Check test suite", () => {
+describe("Toggle test suite", () => {
   let container = null;
 
   beforeEach(() => {
@@ -27,4 +27,25 @@ describe("Check test suite", () => {
 
     expect(nativeCheckbox.type).toBe("checkbox");
   });
+
+  it("toggles hidden input element on component click", () => {
+    act(() => {
+      render(<Toggle />, container);
+    });
+
+    const nativeCheckbox = document.querySelector("input");
+    const checkboxButton = document.querySelector("button");
+
+    expect(nativeCheckbox.checked).toBe(false);
+
+    act(() => {
+      Simulate.click(checkboxButton);
+    });
+    expect(nativeCheckbox.checked).toBe(true);
+
+    act(() => {
+      Simulate.click(checkboxButton);
+    });
+    expect(nativeCheckbox.checked).toBe(false);
+  })
 });
