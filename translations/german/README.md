@@ -5,7 +5,7 @@
 ![github licence](https://img.shields.io/github/license/daniel-norris/neu_ui)
 ![github commit activity shield](https://img.shields.io/github/commit-activity/m/daniel-norris/neumorphic_design)
 ![twitter](https://img.shields.io/twitter/follow/danielpnorris)
-![repository example](src/demo.gif)
+![repository example](../../src/demo.gif)
 
 Prototype and build projects faster using Neu UI - the neumorphic React component library.
 Erstellen Sie Prototypen und Projekte schnelle, mit Neu UI - der React Libary für neumorphische Komponenten.
