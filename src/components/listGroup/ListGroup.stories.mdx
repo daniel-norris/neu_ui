@@ -14,23 +14,10 @@ To display a series of content.
 <Preview>
   <Story name="Vertial list">
     <ListGroup>
-        <ListItem>Item 1</ListItem>
-        <ListItem>Item 2</ListItem>
-        <ListItem>Item 3</ListItem>
-        <ListItem>Item 4</ListItem>
-    </ListGroup>
-  </Story>
-</Preview>
-
-> Set the `horizontal` props as `true` to display the list horizontally.
-
-<Preview>
-  <Story name="Horizontal list">
-    <ListGroup horizontal>
-        <ListItem>Item 1</ListItem>
-        <ListItem>Item 2</ListItem>
-        <ListItem>Item 3</ListItem>
-        <ListItem>Item 4</ListItem>
+        <ListItem key="1">List component 1</ListItem>
+        <ListItem key="2">List component 2</ListItem>
+        <ListItem key="3">List component 3</ListItem>
+        <ListItem key="4">List component 4</ListItem>
     </ListGroup>
   </Story>
 </Preview>
@@ -40,10 +27,10 @@ To display a series of content.
 <Preview>
   <Story name="Vertical list with active and disabled props">
     <ListGroup>
-        <ListItem active>Item 1</ListItem>
-        <ListItem disabled>Item 2</ListItem>
-        <ListItem>Item 3</ListItem>
-        <ListItem>Item 4</ListItem>
+        <ListItem active key="1">List component 1</ListItem>
+        <ListItem disabled key="2">List component 2</ListItem>
+        <ListItem key="3">List component 3</ListItem>
+        <ListItem key="4">List component 4</ListItem>
     </ListGroup>
   </Story>
 </Preview>
@@ -51,12 +38,25 @@ To display a series of content.
 > Use `type` props to treat items as a `button`, `link` or a `div`. Default is `div`.
 
 <Preview>
-  <Story name="Button and anchor list item">
+  <Story name="Vertical list made of button and links">
     <ListGroup>
-        <ListItem type="button">Item 1</ListItem>
-        <ListItem type="link">Item 2</ListItem>
-        <ListItem>Item 3</ListItem>
-        <ListItem>Item 4</ListItem>
+        <ListItem key="1" type="link">List component 1</ListItem>
+        <ListItem key="2" type="button">List component 2</ListItem>
+        <ListItem key="3" type="link">List component 3</ListItem>
+        <ListItem key="4" type="button">List component 4</ListItem>
+    </ListGroup>
+  </Story>
+</Preview>
+
+> Set the `horizontal` props as `true` to display the list horizontally.
+
+<Preview>
+  <Story name="Horizontal list">
+    <ListGroup horizontal>
+        <ListItem key="1">List component 1</ListItem>
+        <ListItem key="2">List component 2</ListItem>
+        <ListItem key="3">List component 3</ListItem>
+        <ListItem key="4">List component 4</ListItem>
     </ListGroup>
   </Story>
 </Preview>
@@ -67,8 +67,8 @@ To display a series of content.
 
 ```jsx
 <ListGroup>
-  <ListItem>Item 1</ListItem>
-  <ListItem>Item 2</ListItem>
+  <ListItem key="1">List component 1</ListItem>
+  <ListItem key="2">List component 2</ListItem>
 </ListGroup>
 ```
 

@@ -11,11 +11,12 @@ const StyledSection = styled.section`
   flex-direction: ${props => props.horizontal ? 'row' : 'column'};
   padding-left: 0;
   margin-bottom: 0;
-  max-width: 400px;
+  width: fit-content;
 `;
 
 export const ListGroup = ({ children, horizontal }) => {
-  return <StyledSection horizontal={horizontal}>{children}</StyledSection>
+  const childComponent = children.map(child => React.cloneElement(child, { horizontal }))
+  return <StyledSection horizontal={horizontal}>{childComponent}</StyledSection>
 }
 
 ListGroup.propTypes = {
