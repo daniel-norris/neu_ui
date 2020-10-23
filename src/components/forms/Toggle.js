@@ -1,13 +1,15 @@
 import React, { Component } from "react";
-import { keyframes } from "styled-components";
 import styled from "styled-components";
 
-const Wrapper = styled.div`
+
+const ToggleWrapper = styled.label`
   display: flex;
   align-items: center;
+  width: 5em;
 `;
 
-const ToggleBackground = styled.div`
+const Switch = styled.div`
+  margin-right: 1rem;
   background-color: rgba(204, 218, 226, 0.349);
   border-radius: 2rem;
   display: flex;
@@ -15,19 +17,13 @@ const ToggleBackground = styled.div`
   width: 2.5em;
   border: none;
   outline: none;
-  margin-right: 1rem;
   font-size: 1rem;
   cursor: pointer;
   box-shadow: inset -8px -8px 16px 0px rgba(255, 255, 255, 0.5),
     inset 6px 6px 10px 0px rgba(0, 0, 0, 0.2);
 `;
 
-const ToggleOnAnimation = keyframes`
-  0% { transform: translateX(0); }
-  100% { transform: translateX(1.25em); }
-`;
-
-const ToggleOn = styled.button`
+const Slider = styled.div`
   box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 1.25rem;
   height: 1.25em;
@@ -36,86 +32,51 @@ const ToggleOn = styled.button`
   outline: none;
   background-color: #edf2f4;
   font-size: 1rem;
-  cursor: pointer;
-  animation: 0.5s ${ToggleOnAnimation};
-  animation-fill-mode: forwards;
+  transition: 0.5s;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
 `;
 
-const ToggleOffAnimation = keyframes`
-  0% { transform: translateX(1.25em); }
-  100% { transform: translateX(0); }
-`;
-
-const ToggleOff = styled.button`
-  box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 1.25rem;
-  height: 1.25em;
-  width: 1.25em;
-  border: none;
-  outline: none;
-  background-color: #edf2f4;
-  font-size: 1rem;
-  cursor: pointer;
-  animation: 0.5s ${ToggleOffAnimation};
-  animation-fill-mode: forwards;
-`;
-
-const LightWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
-const LightOn = styled.div`
-  width: 0.6rem;
-  height: 0.6rem;
-  border-radius: 1rem;
-  background-color: #fff;
-  margin: 0;
-  background-color: rgba(245, 203, 122, 1);
-`;
-
-const LightOff = styled.div`
+const Light = styled.div`
   width: 0.7rem;
   height: 0.7rem;
   border-radius: 1rem;
-  background-color: #fff;
   background-color: rgb(223, 223, 223);
 `;
 
-const HiddenNativeCheckbox = styled.input.attrs({ type: 'checkbox' })`
+const Checkbox = styled.input.attrs({ type: 'checkbox' })`
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
+
+  &:checked + ${Switch}>${Slider} {
+    -webkit-transform: translateX(1.25em);
+    -ms-transform: translateX(1.25em);
+    transform: translateX(1.25em);
+  }
+    
+  &:checked ~ ${Light} {
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: rgba(245, 203, 122, 1);
+  }
 `;
 
 export class Toggle extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { clicked: false };
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    handleClick() {
-        this.setState({ clicked: !this.state.clicked });
-    }
 
     render() {
-        const { clicked } = this.state;
 
         return (
-            <Wrapper>
-                <HiddenNativeCheckbox checked={clicked} onChange={this.handleClick} />
-                <ToggleBackground>
-                    {
-                        clicked ?
-                        <ToggleOn onClick={this.handleClick} />:
-                        <ToggleOff onClick={this.handleClick} />
-                    }
-                </ToggleBackground>
-                <LightWrapper>{clicked ? <LightOn /> : <LightOff />}</LightWrapper>
-            </Wrapper>
+            <ToggleWrapper>  
+                <Checkbox />
+                <Switch>
+                    <Slider />
+                </Switch>
+                <Light />
+            </ToggleWrapper>
         );
     }
 }
