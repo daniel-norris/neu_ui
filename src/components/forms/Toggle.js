@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
 
@@ -65,19 +65,12 @@ const Checkbox = styled.input.attrs({ type: 'checkbox' })`
   }
 `;
 
-export class Toggle extends Component {
-
-    render() {
-
-        return (
-            <ToggleWrapper>  
-                <Checkbox />
-                <Switch>
-                    <Slider />
-                </Switch>
-                <Light />
-            </ToggleWrapper>
-        );
-    }
-}
-
+export const Toggle = () => (
+  <ToggleWrapper>  
+    <Checkbox />
+    <Switch>
+      <Slider />
+    </Switch>
+    <Light />
+  </ToggleWrapper>
+);
