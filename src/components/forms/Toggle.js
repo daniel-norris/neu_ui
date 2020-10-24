@@ -1,12 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
-
-
-const ToggleWrapper = styled.label`
-  display: flex;
-  align-items: center;
-  width: 5em;
-`;
 
 const Switch = styled.div`
   margin-right: 1rem;
@@ -38,7 +32,7 @@ const Slider = styled.div`
   transform: translateX(0);
 `;
 
-const Light = styled.div`
+const Indicator = styled.div`
   width: 0.7rem;
   height: 0.7rem;
   border-radius: 1rem;
@@ -51,26 +45,40 @@ const Checkbox = styled.input.attrs({ type: 'checkbox' })`
   cursor: pointer;
   height: 0;
   width: 0;
+`;
 
-  &:checked + ${Switch}>${Slider} {
+const ToggleWrapper = styled.label`
+  display: flex;
+  align-items: center;
+  width: 5em;
+
+  ${Checkbox}:checked ~ ${Switch}>${Slider} {
     -webkit-transform: translateX(1.25em);
     -ms-transform: translateX(1.25em);
     transform: translateX(1.25em);
   }
     
-  &:checked ~ ${Light} {
+  ${Checkbox}:checked ~ ${Indicator} {
     width: 0.6rem;
     height: 0.6rem;
-    background-color: rgba(245, 203, 122, 1);
+    background-color: ${props => props.indicatorColor};
   }
 `;
 
-export const Toggle = () => (
-  <ToggleWrapper>  
+export const Toggle = ({ indicatorColor }) => (
+  <ToggleWrapper indicatorColor={indicatorColor} >  
     <Checkbox />
     <Switch>
       <Slider />
     </Switch>
-    <Light />
+    <Indicator />
   </ToggleWrapper>
 );
+
+Toggle.propTypes = {
+  indicatorColor: PropTypes.string,
+};
+
+Toggle.defaultProps = {
+  indicatorColor: 'rgba(245, 203, 122, 1)',
+};
