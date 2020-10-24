@@ -6,7 +6,6 @@ Obrigado pelo seu interesse na Neu UI e por tomar parte do seu tempo para contri
 Leia nosso código de conduta antes de contribuir.
 
 ## Como posso contribuir?
-There are many ways in which we/one can to contribute to Neu UI. All contributions are highly appreciated.
 Há muitas maneiras de se contribuir para a Neu UI, e todas serão recebidas com grande apreço.
 
 ## 🐛 Reportar um bug
@@ -19,5 +18,4 @@ Nós aceitamos todos pedidos de recurso, seja para adicionar uma nova funcionali
 No processo de entrega de funções tão rapidamente, nós costumamos esquecer de manter nossa documentação atualizada. Você pode ajudar sugerindo melhorias ou mergulhando diretamente no nosso Guia de Contribuição!
 
 ## ⚙️ Fechar um bug / Problema de recurso
-We welcome contributions that help make Neu UI bug free & improve the experience of our users. Check out our Code Contribution Guide to begin.
 Nós aceitamos contribuições para ajudar a Neu UI ser livre de bugs e melhorar a experiência do usuário. Cheque nosso Guia de Contribuição para começar.
