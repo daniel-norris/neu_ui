@@ -33,7 +33,7 @@ If you're not familiar with testing with Jest, then don't worry. We're still hap
 - Official Docs: https://jestjs.io/
 
 ### Storybook
-We use Storybook as a style guide and a tool to produce online technical documentation for the library. Again, we're happy to accept PR requests that don't include a Storybook `.mdx` file for the component but if you are comfortable creating one then that would be fantastic. You can take a look at the other components to see how it's done and the links below. A nice simple example to start with would be the `Button.js` component.
+We use Storybook as a style guide and a tool to produce online technical documentation for the library. Again, we're happy to accept PRs that don't include a Storybook `.mdx` file for the component but if you are comfortable creating one then that would be fantastic. You can take a look at the other components to see how it's done and the links below. A nice simple example to start with would be the `Button.js` component.
 
 - Official Docs: https://storybook.js.org/
 - How to update MDX stories for new components: https://storybook.js.org/docs/react/writing-docs/mdx
