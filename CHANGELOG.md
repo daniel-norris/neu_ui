@@ -1,3 +1,15 @@
+# v0.3.3 (Tue Oct 27 2020)
+
+#### ⚠️ Pushed to `master`
+
+- Created stale.yml workflow ([@daniel-norris](https://github.com/daniel-norris))
+
+#### Authors: 1
+
+- Dan ([@daniel-norris](https://github.com/daniel-norris))
+
+---
+
 # v0.3.2 (Tue Oct 27 2020)
 
 #### 🐛 Bug Fix
