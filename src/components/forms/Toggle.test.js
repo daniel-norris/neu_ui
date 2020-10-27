@@ -36,10 +36,7 @@ it("checks Toggle structure", () => {
   expect(container.children.length).toBe(1);
 
   // background + indicator
-  expect(container.children[0].children.length).toBe(2);
-
-  // background has a button
-  expect(container.children[0].children[0].firstChild.nodeName).toBe("BUTTON");
+  expect(container.children[0].children.length).toBe(3);
 });
 
 // tests on-click
@@ -48,16 +45,19 @@ it("checks on-click", () => {
     render(<Toggle/>, container);
   });
   
-  const button = container.children[0].children[0].firstChild;
-  const indicatorOld = container.children[0].children[1].firstChild;
+  const check = container.children[0].firstChild;
+  const indicatorOld = container.children[0].children[2];
   const indicatorColorOld = window.getComputedStyle(indicatorOld, null).getPropertyValue("background-color");
 
   act(() => {
-    button.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+    check.dispatchEvent(new MouseEvent("click", { bubbles: true }));
   });
 
-  const indicatorNew = container.children[0].children[1].firstChild;
+  const indicatorNew = container.children[0].children[2];
   const indicatorColorNew = window.getComputedStyle(indicatorNew, null).getPropertyValue("background-color");
 
+  // Make sure we get valid colors, and that they are different.
+  expect(indicatorColorOld.startsWith("rgb")).toBe(true);
+  expect(indicatorColorNew.startsWith("rgb")).toBe(true);
   expect(indicatorColorOld.toString()).not.toBe(indicatorColorNew.toString());
 });
