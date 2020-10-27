@@ -1,3 +1,15 @@
+# v0.3.2 (Tue Oct 27 2020)
+
+#### 🐛 Bug Fix
+
+- updated build bade for readme [#112](https://github.com/daniel-norris/neu_ui/pull/112) ([@daniel-norris](https://github.com/daniel-norris))
+
+#### Authors: 1
+
+- Dan ([@daniel-norris](https://github.com/daniel-norris))
+
+---
+
 # v0.3.1 (Tue Oct 27 2020)
 
 #### 🐛 Bug Fix
