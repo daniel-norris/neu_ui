@@ -1,0 +1,38 @@
+import { Preview, Meta, Story, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, text, color } from "@storybook/addon-knobs";
+
+import { Alert } from "./Alert.js";
+
+<Meta title="Alert" component={Alert} />
+
+# Button
+
+Four different styles of UI alerts that can be used in alert a user that an action has happened.
+The types are:
+
+- Alert
+- Warning
+- Info
+- Success
+
+## Example
+
+Currently available props for `Alert` is just limited to size at the moment but more planned.
+
+<Preview>
+  <Story name="Standard">
+    <Alert color="#ffffff" />
+  </Story>
+</Preview>
+
+## Usage
+
+`import { Alert } from "ui-neu"`
+
+```jsx
+<Alert color="#ffffff" />
+```
+
+## Props
+
+<Props of={Alert} />
