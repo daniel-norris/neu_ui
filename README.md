@@ -2,7 +2,7 @@
 
 ![github issues shield](https://img.shields.io/github/issues/daniel-norris/neumorphic_design)
 ![releases](https://img.shields.io/github/v/release/daniel-norris/neu_ui?include_prereleases)
-![build](https://img.shields.io/github/workflow/status/daniel-norris/neu_ui/push)
+![build](https://img.shields.io/github/workflow/status/daniel-norris/neu_ui/release)
 ![github licence](https://img.shields.io/github/license/daniel-norris/neu_ui)
 ![github commit activity shield](https://img.shields.io/github/commit-activity/m/daniel-norris/neumorphic_design)
 ![twitter](https://img.shields.io/twitter/follow/danielpnorris)
