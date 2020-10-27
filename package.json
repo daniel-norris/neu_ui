@@ -1,6 +1,6 @@
 {
   "name": "ui-neu",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Neu UI, a responsive React component library.",
   "private": false,
   "main": "dist/index.js",
