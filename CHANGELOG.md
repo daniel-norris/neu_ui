@@ -1,3 +1,20 @@
+# v0.3.1 (Tue Oct 27 2020)
+
+#### 🐛 Bug Fix
+
+- removed circleci and implemented github actions workflow [#106](https://github.com/daniel-norris/neu_ui/pull/106) ([@daniel-norris](https://github.com/daniel-norris))
+- Change ci pipeline [#104](https://github.com/daniel-norris/neu_ui/pull/104) ([@daniel-norris](https://github.com/daniel-norris))
+
+#### 📝 Documentation
+
+- updated readme with build status [#105](https://github.com/daniel-norris/neu_ui/pull/105) ([@daniel-norris](https://github.com/daniel-norris))
+
+#### Authors: 1
+
+- Dan ([@daniel-norris](https://github.com/daniel-norris))
+
+---
+
 # v0.3.0 (Tue Oct 27 2020)
 
 #### 🚀 Enhancement
