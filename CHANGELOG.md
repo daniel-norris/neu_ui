@@ -1,3 +1,15 @@
+# v0.3.5 (Tue Oct 27 2020)
+
+#### ⚠️ Pushed to `master`
+
+- Update greetings.yml ([@daniel-norris](https://github.com/daniel-norris))
+
+#### Authors: 1
+
+- Dan ([@daniel-norris](https://github.com/daniel-norris))
+
+---
+
 # v0.3.4 (Tue Oct 27 2020)
 
 #### ⚠️ Pushed to `master`
