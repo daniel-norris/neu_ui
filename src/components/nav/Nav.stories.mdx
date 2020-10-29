@@ -22,6 +22,19 @@ To display the navigation links.
   </Story>
 </Preview>
 
+> Set `variant` props to `breadcrumbs` to display link as breadcrumbs. Default is `normal`.
+
+<Preview>
+  <Story name="Vertial Links with breadcrumbs">
+    <Nav horizontal={true} variant={text("variant","breadcrumbs")}>
+        <NavLink href={text("href", "")} key="1">{text("Link1", "NavLink1")}</NavLink>
+        <NavLink href={text("href", "")} key="2">{text("Link2", "NavLink2")}</NavLink>
+        <NavLink href={text("href", "")} key="3">{text("Link3", "NavLink3")}</NavLink>
+        <NavLink href={text("href", "")} key="4">{text("Link4", "NavLink4")}</NavLink>
+    </Nav>
+  </Story>
+</Preview>
+
 > Use `disabled` and `active` props to highlight or disable links.
 
 <Preview>

@@ -15,8 +15,8 @@ const StyledSection = styled.section`
   width: ${props => props.horizontal ? "100%": "fit-content"};
 `;
 
-export const Nav = ({ children, horizontal }) => {
-  const childComponent = children.map(child => React.cloneElement(child, { horizontal }))
+export const Nav = ({ children, horizontal, variant }) => {
+  const childComponent = children.map(child => React.cloneElement(child, { horizontal, variant }))
   return <StyledSection horizontal={horizontal}>{childComponent}</StyledSection>
 }
 
@@ -29,6 +29,11 @@ Nav.propTypes = {
    * To display nav horizontally
    */
   horizontal: PropTypes.bool,
+  
+  /**
+   * To make links appear as breadcrumbs or normal
+   */
+  variant: PropTypes.string,
 }
 
 Nav.defaultProps = {
