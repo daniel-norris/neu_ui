@@ -27,6 +27,20 @@ describe("ListItem test", () => {
     expect(container.textContent).toBe(children);
   });
 
+  it("renders ListItem children props horizontal", () => {
+    const children = "I'm a Child to be rendered in the ListItem";
+    act(() => {
+      render(
+        <ListItem horizontal={true} disabled={true}>
+          {children}
+        </ListItem>,
+        container
+      );
+    });
+
+    expect(container.textContent).toBe(children);
+  });
+
   it("renders a 'link' child", () => {
     const children = "I'm a Child to be rendered in the ListItem";
     act(() => {
@@ -40,6 +54,34 @@ describe("ListItem test", () => {
     const children = "I'm a Child to be rendered in the ListItem";
     act(() => {
       render(<ListItem type="button">{children}</ListItem>, container);
+    });
+
+    expect(container.textContent).toBe(children);
+  });
+
+  it("renders a 'link' child horizontal", () => {
+    const children = "I'm a Child to be rendered in the ListItem";
+    act(() => {
+      render(
+        <ListItem type="link" horizontal={true}>
+          {children}
+        </ListItem>,
+        container
+      );
+    });
+
+    expect(container.textContent).toBe(children);
+  });
+
+  it("renders a 'button' child horizontal", () => {
+    const children = "I'm a Child to be rendered in the ListItem";
+    act(() => {
+      render(
+        <ListItem type="button" horizontal={true}>
+          {children}
+        </ListItem>,
+        container
+      );
     });
 
     expect(container.textContent).toBe(children);
