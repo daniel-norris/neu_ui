@@ -27,15 +27,24 @@ describe("ListItem test", () => {
     expect(container.textContent).toBe(children);
   });
 
-  it("renders ListItem children props horizontal", () => {
+  it("renders ListItem children props horizontal and disabled", () => {
     const children = "I'm a Child to be rendered in the ListItem";
     act(() => {
       render(
-        <ListItem horizontal={true} disabled={true}>
+        <ListItem horizontal={true} disabled={true} active={true}>
           {children}
         </ListItem>,
         container
       );
+    });
+
+    expect(container.textContent).toBe(children);
+  });
+
+  it("renders ListItem children props active", () => {
+    const children = "I'm a Child to be rendered in the ListItem";
+    act(() => {
+      render(<ListItem active={true}>{children}</ListItem>, container);
     });
 
     expect(container.textContent).toBe(children);
