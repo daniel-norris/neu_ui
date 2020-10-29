@@ -32,4 +32,19 @@ describe("ListGroup test", () => {
 
     expect(container.textContent).toBe(text);
   });
+
+  it("renders ListGroup children props", () => {
+    const text = "I'm a Child to be rendered in the ListGroup";
+    act(() => {
+      render(
+        <ListGroup horizontal={true}>
+          <div key={1}>{text}</div>
+          <div key={2}></div>
+        </ListGroup>,
+        container
+      );
+    });
+
+    expect(container.textContent).toBe(text);
+  });
 });
