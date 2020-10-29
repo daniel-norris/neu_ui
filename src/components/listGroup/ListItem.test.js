@@ -18,10 +18,28 @@ describe("ListItem test", () => {
     container = null;
   });
 
-  it("renders Card children props", () => {
+  it("renders ListItem children props", () => {
     const children = "I'm a Child to be rendered in the ListItem";
     act(() => {
       render(<ListItem>{children}</ListItem>, container);
+    });
+
+    expect(container.textContent).toBe(children);
+  });
+
+  it("renders a 'link' child", () => {
+    const children = "I'm a Child to be rendered in the ListItem";
+    act(() => {
+      render(<ListItem type="link">{children}</ListItem>, container);
+    });
+
+    expect(container.textContent).toBe(children);
+  });
+
+  it("renders a 'button' child", () => {
+    const children = "I'm a Child to be rendered in the ListItem";
+    act(() => {
+      render(<ListItem type="button">{children}</ListItem>, container);
     });
 
     expect(container.textContent).toBe(children);
