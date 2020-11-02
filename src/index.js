@@ -21,3 +21,5 @@ export * from "./components/forms/Select";
 export * from "./components/forms/Slider";
 export * from "./components/forms/TextArea";
 export * from "./components/forms/Toggle";
+export * from "./components/nav/Nav";
+export * from "./components/nav/NavLink";
