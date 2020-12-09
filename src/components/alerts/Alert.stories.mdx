@@ -19,18 +19,67 @@ The types are:
 
 Currently available props for `Alert` is just limited to size at the moment but more planned.
 
+export const Template = (args) => <Alert {...args} />;
+
 <Preview>
-  <Story name="Standard">
-    <Alert color="#ffffff" />
+  <Story
+    name="Alert"
+    args={{
+      color: "#000000",
+      text: "This is the default alert!",
+      style: "alert",
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Waring"
+    args={{
+      color: "rgb(244, 0, 0)",
+      text: "This is the Warning alert!",
+      style: "warning",
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Success"
+    args={{
+      color: "#142199",
+      text: "This is a Success alert!",
+      style: "success",
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Info"
+    args={{
+      color: "#5ECD37",
+      text: "This is an Info alert!",
+      style: "info",
+    }}>
+    {Template.bind({})}
   </Story>
 </Preview>
 
 ## Usage
 
-`import { Alert } from "ui-neu"`
+```js
+import { Alert } from "ui-neu";
+```
 
 ```jsx
-<Alert color="#ffffff" />
+// Code for the default Alert
+<Alert color="#000000" text="This is the default alert!" />
+
+//  A Warning Alert with color rgb(244, 0, 0)
+<Alert color="rgb(244, 0, 0)" text="This is a warning alert!" style="warning" />
+
+// A Success Alert with color #142199
+<Alert color="#142199" text="This is a Success alert!" style="success" />
+
+// An Info Alert with color #5ECD37
+<Alert color="#5ECD37" text="This is an Info alert!" style="info" />
+
+
 ```
 
 ## Props
