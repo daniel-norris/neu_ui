@@ -5,19 +5,25 @@ import { Alert } from "./Alert.js";
 
 <Meta title="Alert" component={Alert} />
 
-# Button
+# Alert
 
 Four different styles of UI alerts that can be used in alert a user that an action has happened.
 The types are:
 
-- Alert
+- Alert **(default)**
 - Warning
 - Info
 - Success
 
 ## Example
 
-Currently available props for `Alert` is just limited to size at the moment but more planned.
+The `Alert` component has 3 different props which are `color`, `text`, and `style`.
+
+The `text` prop is **required**, and does not have a default value. Failing to include it will result in an `Error`.
+
+The `color` prop is optional, and if no value is passed to it then it will default to `#000000`.
+
+The `style` prop is optional, and if no value is passed to it then it will default to `alert`. The style prop is not case sensitive, and will only check if the word matches.
 
 export const Template = (args) => <Alert {...args} />;
 
@@ -36,7 +42,7 @@ export const Template = (args) => <Alert {...args} />;
     args={{
       color: "rgb(244, 0, 0)",
       text: "This is the Warning alert!",
-      style: "warning",
+      style: "Warning",
     }}>
     {Template.bind({})}
   </Story>
@@ -45,7 +51,7 @@ export const Template = (args) => <Alert {...args} />;
     args={{
       color: "#142199",
       text: "This is a Success alert!",
-      style: "success",
+      style: "SUCCESS",
     }}>
     {Template.bind({})}
   </Story>
