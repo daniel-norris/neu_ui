@@ -9,6 +9,7 @@ import ExclamationCircle from "./ExclamationCircle";
 import InfoCircle from './InfoCircle'
 
 
+// Define the styles for Alert and its children
 const StyledAlert = styled.div`
   background: #DCE1E4;
   box-shadow: 5px 6px 15px rgba(0, 0, 0, 0.25), -3px -7px 12px rgba(255, 255, 255, 0.75);
@@ -36,8 +37,15 @@ const StyledAlert = styled.div`
 
 export const Alert = (props) => {
 
-  const { text, color, style } = props
-  
+  // Get both text & color from props
+  const { text, color } = props
+
+  // Get style from props and change it to all lowercase
+  let { style } = props
+
+  style = style.toLowerCase()
+
+  // Return the appropriate alert 
   return (
     <StyledAlert color={color}>
       {style === "alert" ? <ExclamationCircle color={color} text={text} /> : null}
