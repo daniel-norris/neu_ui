@@ -10,10 +10,10 @@ import { Alert } from "./Alert.js";
 Four different styles of UI alerts that can be used in alert a user that an action has happened.
 The types are:
 
-- Alert **(default)**
-- Warning
-- Info
-- Success
+- **Alert _(default)_**
+- **Warning**
+- **Info**
+- **Success**
 
 ## Example
 
@@ -24,6 +24,15 @@ The `text` prop is **required**, and does not have a default value. Failing to i
 The `color` prop is optional, and if no value is passed to it then it will default to `#000000`.
 
 The `style` prop is optional, and if no value is passed to it then it will default to `alert`. The style prop is not case sensitive, and will only check if the word matches.
+
+All of the Alerts return an `svg` with a class name of `.alert-svg` if you need to do additional styling to the `svg`.
+
+| Component Name | Additional SVG Classes          |
+| -------------- | ------------------------------- |
+| Alert          | `.alert-svg .alert-circle`      |
+| Warning        | `.alert-svg .alert-exclamation` |
+| Success        | `.alert-svg .alert-check`       |
+| Info           | `.alert-svg .alert-info-circle` |
 
 export const Template = (args) => <Alert {...args} />;
 
