@@ -1,8 +1,9 @@
 import React from 'react'
 
-export const Exclamation = () => {
+function Exclamation()  {
   return (
     <svg
+      className="alert-svg alert-exclamation"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       stroke="#000000"

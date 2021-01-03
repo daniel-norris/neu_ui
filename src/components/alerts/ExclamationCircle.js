@@ -1,8 +1,9 @@
 import React from 'react'
 
-export const ExclamationCircle = () => {
+function ExclamationCircle ()  {
   return (
     <svg
+      className="alert-svg alert-circle"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       stroke="#000000"
