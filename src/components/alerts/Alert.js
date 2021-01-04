@@ -49,21 +49,41 @@ export const Alert = (props) => {
   return (
     <StyledAlert color={color}>
       {style === "alert" ? <ExclamationCircle color={color} text={text} /> : null}
-      {style === "warning" ? <Exclamation color={color} text={text} /> : null}
       {style === "info" ? <InfoCircle color={color} text={text}/> : null}
       {style === "success" ? <Check color={color} text={text} /> : null}
+      {style === "warning" ? <Exclamation color={color} text={text} /> : null}
       <h1>{text}</h1>
     </StyledAlert>
   );
 }
 
 Alert.propTypes = {
+  /* 
+    Takes in color as a prop: rgb, hex, or by name.
+    For some reason passing in hsl() does not work!
+  */
   color: PropTypes.string,
+
+  /* 
+    The text props is the only required prop for this component
+  */
   text: PropTypes.string.isRequired,
+
+  /*
+    The style props controls what type of <Alert/> component you get back
+    Args: alert, info, success, warning
+    They are NOT case sensitive, only the spelling must match
+  */
+
   style: PropTypes.string,
 }
 
 Alert.defaultProps = {
+  /* 
+    These are the default props that get passed in if left blank.
+    ONLY the `text` prop is required
+  */
+
   style: "alert",
   color: "#000000"
 }
