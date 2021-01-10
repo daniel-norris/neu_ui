@@ -3,6 +3,7 @@ import * as global from "./shared/global";
 
 export { styles, global };
 
+export * from "./components/alerts/Alert";
 export * from "./components/buttons/Button";
 export * from "./components/card/Card";
 export * from "./components/card/CardBody";

@@ -1,0 +1,102 @@
+import { Preview, Meta, Story, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, text, color } from "@storybook/addon-knobs";
+
+import { Alert } from "./Alert.js";
+
+<Meta title="Alert" component={Alert} />
+
+# Alert
+
+Four different styles of UI alerts that can be used in alert a user that an action has happened.
+The types are:
+
+- **Alert _(default)_**
+- **Warning**
+- **Info**
+- **Success**
+
+## Example
+
+The `Alert` component has 3 different props which are `color`, `text`, and `style`.
+
+The `text` prop is **required**, and does not have a default value. Failing to include it will result in an `Error`.
+
+The `color` prop is optional, and if no value is passed to it then it will default to `#000000`.
+
+The `style` prop is optional, and if no value is passed to it then it will default to `alert`. The style prop is not case sensitive, and will only check if the word matches.
+
+All of the Alerts return an `svg` with a class name of `.alert-svg` if you need to do additional styling to the `svg`.
+
+| Component Name | Additional SVG Classes          |
+| -------------- | ------------------------------- |
+| Alert          | `.alert-svg .alert-circle`      |
+| Warning        | `.alert-svg .alert-exclamation` |
+| Success        | `.alert-svg .alert-check`       |
+| Info           | `.alert-svg .alert-info-circle` |
+
+export const Template = (args) => <Alert {...args} />;
+
+<Preview>
+  <Story
+    name="Alert"
+    args={{
+      color: "#000000",
+      text: "This is the default alert!",
+      style: "alert",
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Waring"
+    args={{
+      color: "rgb(244, 0, 0)",
+      text: "This is the Warning alert!",
+      style: "Warning",
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Success"
+    args={{
+      color: "#142199",
+      text: "This is a Success alert!",
+      style: "SUCCESS",
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Info"
+    args={{
+      color: "#5ECD37",
+      text: "This is an Info alert!",
+      style: "info",
+    }}>
+    {Template.bind({})}
+  </Story>
+</Preview>
+
+## Usage
+
+```js
+import { Alert } from "ui-neu";
+```
+
+```jsx
+// Code for the default Alert
+<Alert color="#000000" text="This is the default alert!" />
+
+//  A Warning Alert with color rgb(244, 0, 0)
+<Alert color="rgb(244, 0, 0)" text="This is a warning alert!" style="warning" />
+
+// A Success Alert with color #142199
+<Alert color="#142199" text="This is a Success alert!" style="success" />
+
+// An Info Alert with color #5ECD37
+<Alert color="#5ECD37" text="This is an Info alert!" style="info" />
+
+
+```
+
+## Props
+
+<Props of={Alert} />
