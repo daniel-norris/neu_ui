@@ -48,10 +48,10 @@ export const Alert = (props) => {
   // Return the appropriate alert 
   return (
     <StyledAlert color={color}>
-      {style === "alert" ? <ExclamationCircle color={color} text={text} /> : null}
-      {style === "info" ? <InfoCircle color={color} text={text}/> : null}
-      {style === "success" ? <Check color={color} text={text} /> : null}
-      {style === "warning" ? <Exclamation color={color} text={text} /> : null}
+      {style === "alert" && <ExclamationCircle color={color} text={text} /> }
+      {style === "info" && <InfoCircle color={color} text={text}/> }
+      {style === "success" && <Check color={color} text={text} /> }
+      {style === "warning" && <Exclamation color={color} text={text} /> }
       <h1>{text}</h1>
     </StyledAlert>
   );
